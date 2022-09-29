@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Photo Collage</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn active" onclick="two()">1</button>
+  <button class="btn" onclick="four()">2</button>
+</div>
+
+<!-- Photo Collage -->
+<div class="row"> 
+  <div class="column">
+    <img src="https://www.tripsavvy.com/thmb/ypa6kBcocUQL9pARaoIclmHa84s=/1885x1414/smart/filters:no_upscale()/GettyImages-606222988-5a823cff1d64040037dfd9a1.jpg" style="width:100%">
+    <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/1524784/Image/1565783325_sikkim_web.jpg" style=width:100%">
+    <img src="https://img.onmanorama.com/content/dam/mm/en/travel/outside-kerala/images/2021/10/15/buddha-park-ravangla.jpg" style="width:100%">
+    <img src="https://d1e00ek4ebabms.cloudfront.net/production/e33ca2af-c00d-44f7-8463-10daac2ba5e3.jpg" style="width:100%">
+    <img src="https://static.toiimg.com/photo/msid-84144219,width-96,height-65.cms" style="width:100%">
+    <img src="https://www.adotrip.com/public/images/state/contentImg/5f2402305a842.jpg" style="width:100%">
+    <img src="https://assets.cntraveller.in/photos/6268d60b3a04507262ea6cc9/master/w_1600%2Cc_limit/sikkim-3.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://assets.cntraveller.in/photos/60ba22afbfe773a828a46ea4/master/pass/sikkim-travel-1366x768.jpg" style="width:100%">
+    <img src="https://i0.wp.com/eos.org/wp-content/uploads/2021/03/kanchenjunga-mountain-tshoka-basecamp.jpg?fit=820%2C615" style="width:100%">
+    <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2022/05/Sikkim-Travel-Guide-Sikkim-Tourism.jpg" style="width:100%">
+    <img src="https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2022/03/news-56.png?fit=1200%2C675&ssl=1https://tms.tourgenie.com/assets/images/imgblog/blogimg_24_981e0b6ae0b46e7489d9e2bfcaa5702a.jpg" style="width:100%">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRogh7wg7vkcNyJKV1a4bFZgHleaa_pRHIHAg&usqp=CAU" style="width:100%">
+    <img src="https://www.sikkimtourism.gov.in/Content/Pics/travellerEssentials/Tourismcalendar/calendarImage2.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://www.remotelands.com/storage/media/792/conversions/b130109012-banner-size.jpg" style="width:100%">
+    <img src="https://www.sikkimtourism.gov.in/Content/Pics/thingsToDo/pilgrimage_1_525x220.jpg" style="width:100%">
+    <img src="https://assets.telegraphindia.com/telegraph/2021/Dec/1638464397_sikkim.jpg" style="width:100%">
+    <img src="https://cdn.theculturetrip.com/wp-content/uploads/2017/11/sikkim.jpg" style="width:100%">
+    <img src="https://cdn.lifegate.it/o53AUv2yttPwayoNtgDUj0Zb6vw=/1960x1102/smart/https://www.lifegate.com/app/uploads/sikkim-tea-cultivator-evi.jpg" style="width:100%">
+    <img src="https://assets.cntraveller.in/photos/60ba262fe1b212c19a818133/master/pass/Sikkim-travel-restrictions-1366x768.jpg" style="width:100%">
+    <img src="https://img.onmanorama.com/content/dam/mm/en/travel/travel-news/images/2019/7/26/gangtok-sikkim.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://www.india.com/wp-content/uploads/2021/09/Sikkim-feature-1200.jpg" style="width:100%">
+    <img src="https://www.wtravelmagazine.com/wp-content/uploads/2020/09/30.113.2-Roads-on-Old-Silk-Route-Sikkim-image-by-Rudra-Narayan-Mitra.jpg" style="width:100%">
+    <img src="https://www.nationsonline.org/gallery/India/Terraced-rice-fields-of-Sikkim-India.jpg" style="width:100%">
+    <img src="https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,q_auto/v1/filestore/iyof1oqedrvt6d3pahr2t5cj1o94_1537441482_shutterstock_669660577.jpg" style="width:100%">
+    <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Best-Places-to-Visit-in-North-Sikkim-Gurudongmar-Lake-Tourism.jpg" style="width:100%">
+    <img src="https://www.sikkimtourismindia.com/blog/wp-content/uploads/2015/06/gangtokk.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
